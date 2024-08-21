@@ -5,7 +5,7 @@ import HomePage from './components/HomePage';
 
 function App() {
   const style = {
-    backgroundColor: '#000000',
+    backgroundColor: '#3c5f8f',
     height: '100vh'
   }
   return (
@@ -25,13 +25,13 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    // <div style={style}>
+    <div style={style}>
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
-    // </div>
+    </div>
   );
 }
 
