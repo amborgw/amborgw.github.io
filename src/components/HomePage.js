@@ -13,7 +13,7 @@ export default function HomePage() {
                 justifyContent: 'center'
             }}
         >
-            <img src={traffic} style={{ width: '600px', marginTop: '-100px' }}/>
+            <img src={traffic} style={{ width: '600px', marginTop: '-100px' }} draggable={false}/>
             <span style={{ fontFamily: 'Anton', fontSize: '4em', color: '#ff990a', marginTop: '-50px' }}>
                 Under Construction</span>
         </div>
