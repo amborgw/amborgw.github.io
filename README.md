@@ -1,4 +1,4 @@
-# Welcome
+# Welcome to my part of the internet
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
