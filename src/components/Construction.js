@@ -16,7 +16,7 @@ export default function Construction() {
     >
       {/* TODO: fix for mobile */}
       <img src={traffic} style={{ minWidth: '100px', maxWidth: '600px', marginTop: '-100px' }} draggable={false} alt="Traffic Cone"/>
-      <span style={{ fontFamily: 'Anton', fontSize: '3em', color: '#ff990a', marginTop: '-50px' }}>
+      <span style={{ fontFamily: 'Anton', fontSize: '3em', color: '#ff990a', marginTop: '-50px'}}>
         Under Construction</span>
     </div>
   )
