@@ -8,6 +8,7 @@ export default function Construction() {
       style={{
         height: '100vh',
         width: '100vw',
+        backgroundColor: '#3c5f8f',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
