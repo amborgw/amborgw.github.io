@@ -3,24 +3,22 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconLink from "./IconLink";
 import { Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 
-export default function TitlePage() {
-  // const navigate = useNavigate()
-  // const handleClick = () => {
-  //   navigate('/profile')
-  // }
+export default function TitlePage(props) {
+  const navigate = useNavigate()
 
   return (
     <div style={{  marginLeft: '35%' }}>
-      <Typography sx={{ fontSize: '3em', color: '#3c5f8f', "&:hover": {
+      <Typography onClick={() => navigate('/')} sx={{ fontSize: '3em', color: '#3c5f8f', "&:hover": {
         cursor: 'pointer'
       } }}>Amber</Typography>
-      <Typography sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
+      <Typography onClick={() => navigate('/about-me')} sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
         textDecoration: 'underline solid',
         cursor: 'pointer'
       }}}>about me</Typography>
-      <Typography sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
+      <Typography onClick={() => navigate('/projects')}sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
         textDecoration: 'underline solid',
         cursor: 'pointer'
       }}}>projects</Typography>
@@ -31,7 +29,7 @@ export default function TitlePage() {
       <div className="icon-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 40px)', marginTop: 20 }}>
           <div>
             <IconLink link="https://github.com/amborgw">
-              <GitHubIcon sx={{ fontSize: 33, color: '#3c5f8f', ":hover": {
+              <GitHubIcon sx={{ paddingTop: '1px', fontSize: 32, color: '#3c5f8f', ":hover": {
                 color: '#757575'
               } }}/>
             </IconLink>
