@@ -2,7 +2,7 @@ import React from "react";
 import Construction from "../Construction";
 import HomeButton from "../HomeButton";
 import TitlePage from "../TitlePage";
-import { Box, ThemeProvider, createTheme } from "@mui/material";
+import { Box, ThemeProvider, Typography, createTheme } from "@mui/material";
 
 const theme = createTheme({
   typography: {
@@ -25,6 +25,12 @@ export default function ProfilePage() {
       alignItems: 'center'
     }}>
       <TitlePage focus='profile' />
+      <Box sx={{ height: '80vh'}}>
+        <Typography variant="h1">
+          Hi!
+        </Typography>
+        <Typography variant="body1">yo aergaejg eargaeroiaha ea erghajero ag aergaejgjh aerhja haerjaejgja g je</Typography>
+      </Box>
     </Box>
   </div>
 </ThemeProvider>

@@ -18,11 +18,11 @@ export default function TitlePage(props) {
         textDecoration: 'underline solid',
         cursor: 'pointer'
       }}}>about me</Typography>
-      <Typography onClick={() => navigate('/projects')}sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
+      <Typography onClick={() => navigate('/projects')} sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
         textDecoration: 'underline solid',
         cursor: 'pointer'
       }}}>projects</Typography>
-      <Typography sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
+      <Typography onClick={() => navigate('/contact')} sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
         textDecoration: 'underline solid',
         cursor: 'pointer'
       }}}>contact</Typography>
