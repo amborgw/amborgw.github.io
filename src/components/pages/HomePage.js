@@ -19,7 +19,7 @@ export default function HomePage() {
     <ThemeProvider theme={theme}>
       <div style={{ position: 'absolute', top: '5rem', left: '12rem' }}>
         <Box sx={{
-          width:  'calc(420rem)',
+          // width:  'calc(420rem)',
           display: 'grid',
           gridTemplateColumns: '22rem 44rem',
           gridTemplateRows: '1',

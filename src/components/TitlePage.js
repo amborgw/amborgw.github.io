@@ -29,14 +29,14 @@ export default function TitlePage(props) {
       <div className="icon-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 40px)', marginTop: 20 }}>
           <div>
             <IconLink link="https://github.com/amborgw">
-              <GitHubIcon sx={{ paddingTop: '1px', fontSize: 32, color: '#3c5f8f', ":hover": {
+              <GitHubIcon sx={{ paddingTop: '0.1rem', fontSize: '2rem', color: '#3c5f8f', ":hover": {
                 color: '#757575'
               } }}/>
             </IconLink>
           </div>
           <div>
             <IconLink link="https://www.linkedin.com/in/amber-wong-67744920b/">
-              <LinkedInIcon sx={{ fontSize: 35, color: '#3c5f8f', ":hover": {
+              <LinkedInIcon sx={{ fontSize: '2.2rem', color: '#3c5f8f', ":hover": {
                 color: '#757575'
               } }}/>
             </IconLink>
