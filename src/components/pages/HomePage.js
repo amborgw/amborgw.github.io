@@ -1,4 +1,4 @@
-import React from "react";
+import react from "react";
 
 import Construction from "../Construction";
 import { Box, IconButton, ThemeProvider, Typography, createTheme } from "@mui/material";
@@ -17,14 +17,13 @@ export default function HomePage() {
   return (
     // <Construction/>
     <ThemeProvider theme={theme}>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
+      <div style={{ position: 'absolute', top: '5rem', left: '12rem' }}>
         <Box sx={{
-          width: '100vw',
-          // height: '100vh',
+          width:  'calc(420rem)',
           display: 'grid',
-          gridTemplateColumns: '22rem 2fr',
+          gridTemplateColumns: '22rem 44rem',
           gridTemplateRows: '1',
-          gap: '20px',
+          gap: '10rem',
           alignItems: 'center'
         }}>
           <TitlePage/>
