@@ -9,24 +9,23 @@ import { useNavigate } from "react-router-dom";
 export default function TitlePage(props) {
   const navigate = useNavigate()
 
+  const defaultTypography = { fontSize: '1.2em',
+    color: '#3c5f8f',
+    "&:hover": {
+      textDecoration: 'underline solid',
+      cursor: 'pointer'
+    }
+  }
+
   return (
     <div style={{  marginLeft: '35%' }}>
       <Typography onClick={() => navigate('/')} sx={{ fontSize: '3em', color: '#3c5f8f', "&:hover": {
         cursor: 'pointer'
       } }}>Amber</Typography>
-      <Typography onClick={() => navigate('/about-me')} sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
-        textDecoration: 'underline solid',
-        cursor: 'pointer'
-      }}}>about me</Typography>
-      <Typography onClick={() => navigate('/projects')} sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
-        textDecoration: 'underline solid',
-        cursor: 'pointer'
-      }}}>projects</Typography>
-      <Typography onClick={() => navigate('/contact')} sx={{ fontSize: '1.2em', color: '#3c5f8f', "&:hover": {
-        textDecoration: 'underline solid',
-        cursor: 'pointer'
-      }}}>contact</Typography>
-      <div className="icon-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 40px)', marginTop: 20 }}>
+      <Typography onClick={() => navigate('/about-me')} sx={defaultTypography}>about me</Typography>
+      <Typography onClick={() => navigate('/projects')} sx={defaultTypography}>projects</Typography>
+      <Typography onClick={() => navigate('/contact')} sx={defaultTypography}>contact</Typography>
+      <div className="icon-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 2.5rem)', marginTop: '1rem' }}>
           <div>
             <IconLink link="https://github.com/amborgw">
               <GitHubIcon sx={{ paddingTop: '0.1rem', fontSize: '2rem', color: '#3c5f8f', ":hover": {

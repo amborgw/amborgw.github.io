@@ -19,7 +19,7 @@ export default function FeaturedItems() {
                 height: '15rem',
                 borderRadius: '1rem',
                 padding: '1.3rem',
-                marginTop: '4rem'
+                marginTop: '3rem'
             }}>
                 <Typography sx={{ fontSize: '1.4em', color: '#ffffff', opacity: '100%'}}>Recent Obsession</Typography>
             </Box>
