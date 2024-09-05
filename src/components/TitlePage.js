@@ -26,10 +26,9 @@ export default function TitlePage(props) {
       <Typography onClick={() => navigate('/')} sx={{ alignItems: 'left', fontSize: '3em', color: '#303A6F', "&:hover": {
         cursor: 'pointer'
       } }}> <StarRoundedIcon sx={{ fontSize: '3rem'}}/> Amber</Typography>
-      <a href="#profile" style={{ textDecoration: 'none'}}><Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>about me</Typography></a>
-      {/* <Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>about me</Typography> */}
-      <Typography onClick={() => navigate('/projects')} variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>projects</Typography>
-      <Typography onClick={() => navigate('/contact')} variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>contact</Typography>
+      <a href="#about-me" style={{ textDecoration: 'none'}}><Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>about me</Typography></a>
+      <a href="#projects" style={{ textDecoration: 'none'}}><Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>projects</Typography></a>
+      <a href="#contact" style={{ textDecoration: 'none'}}><Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>contact</Typography></a>
       <div className="icon-grid" style={{ position: 'relative', display: 'grid', gridTemplateColumns: 'repeat(3, 2.5rem)', marginTop: '1rem', marginLeft: '3.7rem' }}>
           <div>
             <IconLink link="https://github.com/amborgw">
