@@ -23,7 +23,7 @@ const theme = createTheme({
 export default function ProfilePage() {
  return (
   <ThemeProvider theme={theme}>
-  <div id="profile" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
+  <div id="about-me" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
     {/* <Box sx={{
       display: 'grid',
       gridTemplateColumns: '22rem 44rem',
