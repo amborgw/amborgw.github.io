@@ -7,7 +7,7 @@ export default function FeaturedItems() {
             <Box sx={{ 
                 background: 'rgba(255, 255, 255, 0.4)',
                 maxWidth: '40rem',
-                height: '15rem',
+                // height: '15rem',
                 borderRadius: '1rem',
                 padding: '1.3rem',
             }}>
@@ -16,6 +16,11 @@ export default function FeaturedItems() {
                 <Typography variant="subtitle2">reading <i style={{ fontWeight: 800, }}>The Body Keeps The Score - Bessel van der Kolk</i></Typography>
                 <Typography variant="subtitle2">working on <i style={{ fontWeight: 800, }}>this website</i></Typography>
                 <Typography variant="subtitle2">obsessed with these <i style={{ fontWeight: 800, }}>3 memories of the month</i></Typography>
+                <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginTop: '1rem'}}>
+                    <img style={{ width: '200px', height: '200px', objectFit: 'cover'}} src="https://i.pinimg.com/564x/ea/b1/54/eab1541cf179b0e2b4da817f46399dad.jpg"></img>
+                    <img style={{ width: '200px', height: '200px', objectFit: 'cover'}} src="https://i.pinimg.com/originals/b5/22/57/b52257704934e0d1ea5684be78241d19.gif"></img>
+                    <img style={{ width: '200px', height: '200px', objectFit: 'cover'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img>
+                </Box>
             </Box>
         </Box>
     )

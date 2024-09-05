@@ -23,22 +23,22 @@ const theme = createTheme({
 export default function ProfilePage() {
  return (
   <ThemeProvider theme={theme}>
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
-    <Box sx={{
+  <div id="profile" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
+    {/* <Box sx={{
       display: 'grid',
       gridTemplateColumns: '22rem 44rem',
       gridTemplateRows: '1',
       gap: '10rem',
       alignItems: 'center',
     }}>
-      <TitlePage focus='profile' />
       <Box sx={{ height: '80vh'}}>
         <Typography variant="h1">
           Hi!
         </Typography>
         <Typography variant="subtitle1">yo aergaejg eargaeroiaha ea erghajero ag aergaejgjh aerhja haerjaejgja g je</Typography>
       </Box>
-    </Box>
+    </Box> */}
+    <Construction/>
   </div>
 </ThemeProvider>
  )

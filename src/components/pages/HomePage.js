@@ -4,6 +4,7 @@ import Construction from "../Construction";
 import { Box, IconButton, ThemeProvider, Typography, createTheme } from "@mui/material";
 import FeaturedItems from "../FeaturedItems";
 import TitlePage from "../TitlePage";
+import ProfilePage from "./ProfilePage";
 
 const theme = createTheme({
   typography: {
@@ -43,6 +44,7 @@ export default function HomePage() {
           <FeaturedItems/>
         </Box>
       </div>
+          <ProfilePage/>
     </ThemeProvider>
   )
 }
