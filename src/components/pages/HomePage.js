@@ -8,7 +8,20 @@ import TitlePage from "../TitlePage";
 const theme = createTheme({
   typography: {
     fontFamily: 'Anton',
-    color: '#3c5f8f'
+    color: '#3c5f8f',
+    subtitle1: { fontSize: '1.2em',
+      color: '#303A6F',
+      "&:hover": {
+        fontWeight: 800,
+        cursor: 'pointer'
+      },
+      fontFamily: 'Poppins',
+    },
+    subtitle2: { fontSize: '1.2em',
+      color: '#303A6F',
+      fontFamily: 'Poppins',
+      fontWeight: 50
+    }
   },
 });
 
@@ -17,14 +30,14 @@ export default function HomePage() {
   return (
     // <Construction/>
     <ThemeProvider theme={theme}>
-      <div style={{ position: 'absolute', top: '5rem', left: '12rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
         <Box sx={{
           // width:  'calc(420rem)',
           display: 'grid',
           gridTemplateColumns: '22rem 44rem',
           gridTemplateRows: '1',
           gap: '10rem',
-          alignItems: 'center'
+          alignItems: 'center',
         }}>
           <TitlePage/>
           <FeaturedItems/>
