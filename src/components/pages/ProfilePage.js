@@ -7,7 +7,7 @@ import { Box, ThemeProvider, Typography, createTheme } from "@mui/material";
 const theme = createTheme({
   typography: {
     fontFamily: 'Anton',
-    color: '#3c5f8f',
+    color: '#303A6F',
     subtitle1: { fontSize: '1.2em',
       color: '#303A6F',
       "&:hover": {
@@ -16,6 +16,15 @@ const theme = createTheme({
       },
       fontFamily: 'Poppins',
       marginLeft: '3rem'
+    },
+    subtitle2: { fontSize: '1.2em',
+      color: '#303A6F',
+      fontFamily: 'Poppins',
+    },
+    h1: {
+      color: '#303A6F',
+      fontFamily: 'Anton',
+      fontSize: '3.4rem'
     }
   },
 });
@@ -23,22 +32,20 @@ const theme = createTheme({
 export default function ProfilePage() {
  return (
   <ThemeProvider theme={theme}>
-  <div id="about-me" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
-    {/* <Box sx={{
-      display: 'grid',
-      gridTemplateColumns: '22rem 44rem',
-      gridTemplateRows: '1',
-      gap: '10rem',
-      alignItems: 'center',
-    }}>
-      <Box sx={{ height: '80vh'}}>
-        <Typography variant="h1">
-          Hi!
+  <div id="about-me" style={{ background: 'rgba(0,0,0,0.2)', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
+    <Box>
+      <Typography variant="h1">
+        Hi, I'm Amber Wong
+      </Typography>
+      <Box sx={{ width: '27rem', marginTop: '3rem'}}>
+        <Typography variant="subtitle2">I am a 3rd Year student at UNSW studying Computer Science and Neuroscience.<br /><br />
+          I love <i style={{ fontWeight: 800 }}>creating</i> and <i style={{ fontWeight: 800 }}>curating</i> the world around me, as nothing is more rewarding than making something from scratch.<br /><br/>
+          Please take a look around my <i style={{ fontWeight: 800 }}>decorated corner of the internet</i>
         </Typography>
-        <Typography variant="subtitle1">yo aergaejg eargaeroiaha ea erghajero ag aergaejgjh aerhja haerjaejgja g je</Typography>
       </Box>
-    </Box> */}
-    <Construction/>
+    </Box>
+
+    {/* <Construction/> */}
   </div>
 </ThemeProvider>
  )

@@ -22,10 +22,10 @@ export default function TitlePage(props) {
   }
 
   return (
-    <div style={{  marginLeft: '35%' }}>
-      <Typography onClick={() => navigate('/')} sx={{ alignItems: 'left', fontSize: '3em', color: '#303A6F', "&:hover": {
+    <div id="navbar" style={{ position: 'fixed', top: '20rem', left: '10rem', width: '20rem', zIndex: 999}}>
+      <a href="#home" style={{ textDecoration: 'none'}}><Typography sx={{ alignItems: 'left', fontSize: '3em', color: '#303A6F', "&:hover": {
         cursor: 'pointer'
-      } }}> <StarRoundedIcon sx={{ fontSize: '3rem'}}/> Amber</Typography>
+      } }}> <StarRoundedIcon sx={{ fontSize: '3rem'}}/> Amber</Typography></a>
       <a href="#about-me" style={{ textDecoration: 'none'}}><Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>about me</Typography></a>
       <a href="#projects" style={{ textDecoration: 'none'}}><Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>projects</Typography></a>
       <a href="#contact" style={{ textDecoration: 'none'}}><Typography variant="subtitle1" sx={{ marginLeft: '3.7rem'}}>contact</Typography></a>

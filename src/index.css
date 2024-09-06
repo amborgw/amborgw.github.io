@@ -3,6 +3,7 @@ html {
   font-size: 1vw;
   margin: 0;
   overscroll-behavior: none;
+  scroll-behavior: smooth;
   /* background: rgb(238,174,202); */
 }
 
