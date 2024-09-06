@@ -22,7 +22,7 @@ export default function TitlePage(props) {
   }
 
   return (
-    <div id="navbar" style={{ position: 'fixed', top: '20rem', left: '10rem', width: '20rem', zIndex: 999}}>
+    <div id="navbar" style={{ position: 'fixed', top: '20rem', left: '7rem', width: '20rem', zIndex: 999}}>
       <a href="#home" style={{ textDecoration: 'none'}}><Typography sx={{ alignItems: 'left', fontSize: '3em', color: '#303A6F', "&:hover": {
         cursor: 'pointer'
       } }}> <StarRoundedIcon sx={{ fontSize: '3rem'}}/> Amber</Typography></a>

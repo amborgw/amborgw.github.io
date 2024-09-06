@@ -5,6 +5,7 @@ export default function FeaturedItems() {
     return (
         <Box id="home" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh'  }}>
             <Box sx={{ 
+                marginLeft: '5rem', 
                 background: 'rgba(255, 255, 255, 0.4)',
                 maxWidth: '40rem',
                 borderRadius: '1rem',

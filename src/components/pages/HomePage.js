@@ -5,6 +5,7 @@ import { Box, IconButton, ThemeProvider, Typography, createTheme } from "@mui/ma
 import FeaturedItems from "../FeaturedItems";
 import TitlePage from "../TitlePage";
 import ProfilePage from "./ProfilePage";
+import ProjectsPage from "./ProjectsPage";
 
 const theme = createTheme({
   typography: {
@@ -33,6 +34,7 @@ export default function HomePage() {
       <FeaturedItems/>
       <TitlePage/>  
       <ProfilePage/>
+      <ProjectsPage/>
     </ThemeProvider>
   )
 }
