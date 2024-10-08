@@ -30,7 +30,7 @@ const theme = createTheme({
 export default function ProfilePage() {
  return (
   <ThemeProvider theme={theme}>
-  <div id="about-me" style={{ backgroundImage: `url(${honey})`, opacity: 0.5, backgroundSize: 'cover', backgroundAttachment: 'fixed',  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
+  <div id="about-me" style={{ backgroundSize: 'cover', backgroundAttachment: 'fixed',  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
       <Box>
         <Typography variant="h1">
           Hi, I'm Amber Wong
