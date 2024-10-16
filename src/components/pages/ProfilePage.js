@@ -9,7 +9,7 @@ const theme = createTheme({
     subtitle1: { fontSize: '1.2em',
       color: '#303A6F',
       "&:hover": {
-        fontWeight: 800,
+        fontWeight: 'bold',
         cursor: 'pointer'
       },
       fontFamily: 'Poppins',
@@ -37,8 +37,8 @@ export default function ProfilePage() {
         </Typography>
         <Box sx={{ width: '27rem', marginTop: '3rem'}}>
           <Typography variant="subtitle2">I am a 3rd Year student at UNSW studying Computer Science and Neuroscience.<br /><br />
-            I love <i style={{ fontWeight: 800 }}>creating</i> and <i style={{ fontWeight: 800 }}>curating</i> the world around me, as nothing is more rewarding than making something from scratch.<br /><br/>
-            Please take a look around my <i style={{ fontWeight: 800 }}>decorated corner of the internet</i>
+            I love <i style={{ fontWeight: 'bold' }}>creating</i> and <i style={{ fontWeight: 'bold' }}>curating</i> the world around me, as nothing is more rewarding than making something from scratch.<br /><br/>
+            Please take a look around my <i style={{ fontWeight: 'bold' }}>decorated corner of the internet</i>
           </Typography>
         </Box>
       </Box>

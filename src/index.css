@@ -21,7 +21,7 @@ body {
 @font-face {
   font-family: 'Anton';
   src: url("./fonts/Anton-Regular.ttf") format('woff2');
- }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
