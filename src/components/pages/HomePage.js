@@ -11,7 +11,7 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Anton',
     color: '#3c5f8f',
-    subtitle1: { fontSize: '1.3em',
+    subtitle1: { fontSize: '1.1em',
       color: '#303A6F',
       "&:hover": {
         fontWeight: 'bold',
@@ -19,7 +19,7 @@ const theme = createTheme({
       },
       fontFamily: 'Poppins',
     },
-    subtitle2: { fontSize: '1.2em',
+    subtitle2: { fontSize: '1.1em',
       color: '#303A6F',
       fontFamily: 'Poppins',
       fontWeight: 400
@@ -27,7 +27,7 @@ const theme = createTheme({
     h1: {
       color: '#303A6F',
       fontFamily: 'Anton',
-      fontSize: '3.4rem'
+      fontSize: '2rem'
     }
   },
 });
