@@ -1,7 +1,7 @@
 import react from "react";
 
 import Construction from "../Construction";
-import { Box, IconButton, ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Box, IconButton, ThemeProvider, Typography, createTheme, Grid } from "@mui/material";
 import FeaturedItems from "../FeaturedItems";
 import TitlePage from "../TitlePage";
 import ProfilePage from "./ProfilePage";
@@ -31,10 +31,16 @@ const theme = createTheme({
 export default function HomePage() {
   return (
     <ThemeProvider theme={theme}>
-      <FeaturedItems/>
-      <TitlePage/>  
-      <ProfilePage/>
-      <ProjectsPage/>
+      <Grid container>
+        <Grid item xs={4}>
+          <TitlePage/>  
+        </Grid>
+        <Grid item xs={8}>
+          <FeaturedItems/>
+          <ProfilePage/>
+          <ProjectsPage/>
+        </Grid>
+      </Grid>
     </ThemeProvider>
   )
 }

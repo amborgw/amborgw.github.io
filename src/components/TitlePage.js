@@ -42,11 +42,11 @@ export default function TitlePage(props) {
   }
 
   return (
-    <div id="navbar" style={{ position: 'fixed', top: '20rem', left: '7rem', width: '20rem', zIndex: 999 }}>
+    <div id="navbar" style={{ position: 'fixed', top: '20em', left: '4em', zIndex: 999 }}>
       <Stack direction="row" >
         <StarRoundedIcon sx={{ position: 'relative', top: y, right: '0.5rem', fontSize: size, color: '#303A6F', minWidth: '3rem'}}/>
         <div>
-          <a href="#home" style={{ textDecoration: 'none'}}><Typography onClick={toggleHome} sx={{ alignItems: 'left', fontSize: '3em', color: '#303A6F', "&:hover": {
+          <a href="#home" style={{ textDecoration: 'none'}}><Typography onClick={toggleHome} sx={{ alignItems: 'left', fontSize: '3rem', color: '#303A6F', "&:hover": {
           cursor: 'pointer' 
         } }}>Amber</Typography></a>
         <a href="#about-me" style={{ textDecorationLine: 'none' }} ><Typography variant="subtitle1" sx={{ fontWeight: boldMe ? 'bold': '400' }} onClick={toggleMe}>about me</Typography></a>
