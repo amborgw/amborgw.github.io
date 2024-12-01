@@ -9,12 +9,12 @@ export default function FeaturedItems() {
             <StarRoundedIcon sx={{ position: 'relative', right: '0.5rem', fontSize: "4rem", color: '#303A6F', minWidth: '3rem'}}/>
             <Box sx={{ 
                 background: 'rgba(255, 255, 255, 0.4)',
-                maxWidth: '55em',
-                borderRadius: '1em',
-                padding: '2em',
+                maxWidth: '55rem',
+                borderRadius: '1rem',
+                padding: '2rem',
             }}>
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={4}>
-                    <img style={{ width: "auto", height: "30em", objectFit: 'cover', borderRadius: '0.5em'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img>
+                    <img style={{ width: "auto", height: "30rem", objectFit: 'cover', borderRadius: '0.5em'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img>
                     <Stack>
                     <Typography variant="h1">
                         Hi, I'm Amber Wong
