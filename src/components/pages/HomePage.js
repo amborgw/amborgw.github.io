@@ -1,7 +1,7 @@
 import react from "react";
 
 import Construction from "../Construction";
-import { Box, IconButton, ThemeProvider, Typography, createTheme, Grid } from "@mui/material";
+import { Box, IconButton, ThemeProvider, Typography, createTheme, Grid, useMediaQuery } from "@mui/material";
 import FeaturedItems from "../FeaturedItems";
 import TitlePage from "../TitlePage";
 import ProfilePage from "./ProfilePage";
@@ -28,10 +28,12 @@ const theme = createTheme({
 });
 
 
+
 export default function HomePage() {
+  const isMs = useMediaQuery('(min-width:1000px)');
   return (
     <ThemeProvider theme={theme}>
-      <TitlePage/>  
+      {isMs && <TitlePage/> }
       <FeaturedItems/>
       <ProfilePage/>
       <ProjectsPage/>
