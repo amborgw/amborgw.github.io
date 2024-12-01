@@ -11,7 +11,7 @@ export default function TitlePage(props) {
   const [boldMe, setMe] = useState(false)
   const [boldProjects, setProjects] = useState(false)
   const [boldContact, setContact] = useState(false)
-  const [y, setTop] = useState("0.5rem")
+  const [y, setTop] = useState("0.7rem")
   const [size, setSize] = useState("3rem")
 
   const toggleMe = () => {
@@ -37,12 +37,12 @@ export default function TitlePage(props) {
     setProjects(false)
     setMe(false)
     setContact(false)
-    setTop("0.5rem")
+    setTop("0.7rem")
     setSize("3rem")
   }
 
   return (
-    <div id="navbar" style={{ position: 'fixed', top: '20rem', left: '7rem', width: '20rem', zIndex: 999}}>
+    <div id="navbar" style={{ position: 'fixed', top: '20rem', left: '7rem', width: '20rem', zIndex: 999 }}>
       <Stack direction="row" >
         <StarRoundedIcon sx={{ position: 'relative', top: y, right: '0.5rem', fontSize: size, color: '#303A6F', minWidth: '3rem'}}/>
         <div>
