@@ -7,7 +7,9 @@ html {
 }
 
 body {
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) fixed;
+  /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) fixed; */
+  /* background: radial-gradient(circle, rgba(244,235,224) 30%, rgba(148,187,233,1) 100%) fixed; */
+  background-color: rgb(244, 235, 224);
   background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

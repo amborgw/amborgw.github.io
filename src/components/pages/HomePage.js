@@ -23,6 +23,11 @@ const theme = createTheme({
       color: '#303A6F',
       fontFamily: 'Poppins',
       fontWeight: 400
+    },
+    h1: {
+      color: '#303A6F',
+      fontFamily: 'Anton',
+      fontSize: '3.4rem'
     }
   },
 });
@@ -33,10 +38,10 @@ export default function HomePage() {
   const isMs = useMediaQuery('(min-width:1000px)');
   return (
     <ThemeProvider theme={theme}>
-      {isMs && <TitlePage/> }
+      {/* {isMs && <TitlePage/> } */}
       <FeaturedItems/>
-      <ProfilePage/>
-      <ProjectsPage/>
+      {/* <ProfilePage/>
+      <ProjectsPage/> */}
     </ThemeProvider>
   )
 }
