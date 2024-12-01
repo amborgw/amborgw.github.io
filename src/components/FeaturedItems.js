@@ -9,7 +9,7 @@ export default function FeaturedItems() {
             <StarRoundedIcon sx={{ position: 'relative', right: '0.5rem', fontSize: "4rem", color: '#303A6F', minWidth: '3rem'}}/>
             <Box sx={{ 
                 background: 'rgba(255, 255, 255, 0.4)',
-                maxWidth: '55rem',
+                maxWidth: '50rem',
                 borderRadius: '1rem',
                 padding: '2rem',
             }}>
