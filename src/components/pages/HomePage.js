@@ -31,16 +31,10 @@ const theme = createTheme({
 export default function HomePage() {
   return (
     <ThemeProvider theme={theme}>
-      <Grid container>
-        <Grid item xs={4}>
-          <TitlePage/>  
-        </Grid>
-        <Grid item xs={8}>
-          <FeaturedItems/>
-          <ProfilePage/>
-          <ProjectsPage/>
-        </Grid>
-      </Grid>
+      <TitlePage/>  
+      <FeaturedItems/>
+      <ProfilePage/>
+      <ProjectsPage/>
     </ThemeProvider>
   )
 }

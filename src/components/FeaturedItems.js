@@ -3,7 +3,7 @@ import React from "react";
 
 export default function FeaturedItems() {
     return (
-        <Box id="home" style={{ display: 'flex', alignItems: 'center', height: '100vh'  }}>
+        <Box id="home" style={{ display: 'flex', alignItems: 'center', height: '100vh', justifyContent: 'center' }}>
             <Box sx={{ 
                 marginLeft: '5em', 
                 background: 'rgba(255, 255, 255, 0.4)',
