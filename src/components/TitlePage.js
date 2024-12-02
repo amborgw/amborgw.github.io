@@ -5,8 +5,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import IconLink from "./IconLink";
 import { Grid, Stack, Typography } from "@mui/material"; // import star from "../images/star.png"
+import { useNavigate } from "react-router-dom";
 
 export default function TitlePage(props) {
+  const navigate = useNavigate();
   const [boldMe, setMe] = useState(false);
   const [boldProjects, setProjects] = useState(false);
   const [boldContact, setContact] = useState(false);
@@ -26,13 +28,13 @@ export default function TitlePage(props) {
     // setSize("1.5rem");
   };
 
-  const toggleHome = () => {
-    setProjects(false);
-    setMe(false);
-    setContact(false);
-    // setTop("0.7rem");
-    // setSize("3rem");
-  };
+  // const toggleHome = () => {
+  //   setProjects(false);
+  //   setMe(false);
+  //   setContact(false);
+  //   // setTop("0.7rem");
+  //   // setSize("3rem");
+  // };
 
   return (
     <div
@@ -57,7 +59,7 @@ export default function TitlePage(props) {
         />
         <a href="#home" style={{ textDecoration: "none" }}>
           <Typography
-            // onClick={toggleHome}
+            onClick={() => navigate("/")}
             sx={{
               fontSize: "3rem",
               color: "#303A6F",
@@ -77,24 +79,20 @@ export default function TitlePage(props) {
           alignItems="center"
           justifyContent="center"
         >
-          <a href="#projects" style={{ textDecorationLine: "none" }}>
-            <Typography
-              variant="subtitle1"
-              sx={{ fontWeight: boldProjects ? "bold" : "400", width: "5rem" }}
-              onClick={toggleProjects}
-            >
-              projects
-            </Typography>
-          </a>
-          <a href="#contact" style={{ textDecorationLine: "none" }}>
-            <Typography
-              variant="subtitle1"
-              sx={{ fontWeight: boldContact ? "bold" : "400", width: "5rem" }}
-              onClick={toggleContact}
-            >
-              contact
-            </Typography>
-          </a>
+          <Typography
+            variant="subtitle1"
+            sx={{ fontWeight: boldProjects ? "bold" : "400", width: "5rem" }}
+            onClick={() => navigate("/projects")}
+          >
+            projects
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            sx={{ fontWeight: boldContact ? "bold" : "400", width: "5rem" }}
+            onClick={() => navigate("/contact")}
+          >
+            contact
+          </Typography>
           <IconLink link="https://github.com/amborgw" position="relative">
             <GitHubIcon
               sx={{

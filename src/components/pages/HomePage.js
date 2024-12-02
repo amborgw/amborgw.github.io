@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme, useMediaQuery } from "@mui/material";
 import FeaturedItems from "../FeaturedItems";
 import TitlePage from "../TitlePage";
 // import ProfilePage from "./ProfilePage";
-// import ProjectsPage from "./ProjectsPage";
+import ProjectsPage from "./ProjectsPage";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 
 const theme = createTheme({
@@ -45,7 +45,9 @@ export default function HomePage() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "2rem",
+          width: "100vw",
+          height: "100vh",
+          gap: "2rem",
         }}
       >
         {isMs ? (
@@ -65,10 +67,10 @@ export default function HomePage() {
             }}
           />
         )}
-        <FeaturedItems />
+        <FeaturedItems id="#home" />
       </div>
-      {/* <ProfilePage/>
-      <ProjectsPage/> */}
+      {/* <ProjectsPage id="#projects"/> */}
+      {/* <ProfilePage/> */}
     </ThemeProvider>
   );
 }

@@ -7,7 +7,7 @@ export default function Construction() {
     <div
       style={{
         height: "100vh",
-        width: "100vw",
+        // width: "100vw",
         backgroundColor: "#3c5f8f",
         display: "flex",
         flexDirection: "column",
@@ -18,14 +18,14 @@ export default function Construction() {
       {/* TODO: fix for mobile */}
       <img
         src={traffic}
-        style={{ minWidth: "100px", maxWidth: "600px", marginTop: "-100px" }}
+        style={{ maxHeight: "30rem", width: "auto", objectFit: "cover" }}
         draggable={false}
         alt="Traffic Cone"
       />
       <span
         style={{
           fontFamily: "Anton",
-          fontSize: "3em",
+          fontSize: "2em",
           color: "#ff990a",
           marginTop: "-50px",
         }}

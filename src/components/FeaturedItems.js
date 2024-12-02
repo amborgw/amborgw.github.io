@@ -1,26 +1,19 @@
 import React from "react";
 import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
 import profile from "../images/pfp.jpg";
+import { CardContainer } from "./index.styles";
 
 export default function FeaturedItems() {
   const isMs = useMediaQuery("(min-width:900px)");
 
   return (
-    <Box
-      sx={{
-        background: "rgba(244, 244, 244, 0.9)",
-        maxWidth: "55rem",
-        borderRadius: "1rem",
-        margin: "2rem",
-        padding: "2rem",
-      }}
-    >
+    <CardContainer>
       <Stack direction={{ xs: "column", md: "row" }} spacing={4}>
         {isMs ? (
           <img
             style={{
               width: "auto",
-              height: "30rem",
+              maxHeight: "30rem",
               objectFit: "cover",
               borderRadius: "0.5em",
             }}
@@ -70,13 +63,13 @@ export default function FeaturedItems() {
               <br />
               Working on <i style={{ fontWeight: "bold" }}>this website</i>
               <br />
-              {/* Obsessed with these{" "}
-                <i style={{ fontWeight: "bold" }}>3 memories of the month</i>
-                <br /> */}
+              Obsessed with these{" "}
+              <i style={{ fontWeight: "bold" }}>3 memories of the month</i>
+              <br />
             </Typography>
           </Box>
         </Stack>
       </Stack>
-    </Box>
+    </CardContainer>
   );
 }
