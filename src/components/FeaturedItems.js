@@ -9,8 +9,8 @@ export default function FeaturedItems() {
         // <Stack id="home" spacing={4} justifyContent="center" alignItems="center">
         <>
             <Box sx={{ 
-                background: 'rgba(255, 255, 255, 0.4)',
-                maxWidth: '60rem',
+                background: 'rgba(244, 244, 244, 0.9)',
+                maxWidth: '55rem',
                 borderRadius: '1rem',
                 margin: '2rem',
                 padding: '2rem',
