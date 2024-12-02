@@ -45,6 +45,7 @@ export default function HomePage() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          minHeight: '100vh',
           gap: "2rem",
         }}
       >
