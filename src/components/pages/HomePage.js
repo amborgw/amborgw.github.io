@@ -46,7 +46,7 @@ export default function HomePage() {
           justifyContent: "center",
           alignItems: "center",
           minHeight: '100vh',
-          gap: "2rem",
+          gap: isMs ? "2rem" : "0rem",
         }}
       >
         {isMs ? (

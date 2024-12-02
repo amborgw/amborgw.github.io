@@ -7,16 +7,7 @@ export default function FeaturedItems() {
   const isMs = useMediaQuery("(min-width:900px)");
 
   return (
-    // <Stack id="home" spacing={4} justifyContent="center" alignItems="center">
-    <>
-      <Box
-        sx={{
-          background: "rgba(244, 244, 244, 0.9)",
-          maxWidth: "55rem",
-          borderRadius: "1rem",
-          margin: "2rem",
-          padding: "2rem",
-        }}
+      <CardContainer
       >
         <Stack direction={{ xs: "column", md: "row" }} spacing={4}>
           {isMs ? (
@@ -84,8 +75,6 @@ export default function FeaturedItems() {
             </Box>
           </Stack>
         </Stack>
-      </Box>
-    </>
-    // </Stack>
+      </CardContainer>
   );
 }
