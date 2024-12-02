@@ -1,8 +1,8 @@
 import React from "react";
 import IconLink from "./IconLink";
 import { useNavigate } from "react-router-dom";
-import styled from 'styled-components';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import styled from "styled-components";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const Image = styled.img`
   width: 45px;
@@ -15,9 +15,17 @@ const Image = styled.img`
 `;
 
 export default function HomeButton() {
-	const navigate = useNavigate()
+  const navigate = useNavigate();
 
-	return (
-		<ArrowBackIcon sx={{ position: "absolute", margin: 4, color: '#ffffff', fontSize: '2em'}} onClick={() => navigate('/')}></ArrowBackIcon>
-	)
+  return (
+    <ArrowBackIcon
+      sx={{
+        position: "absolute",
+        margin: 4,
+        color: "#ffffff",
+        fontSize: "2em",
+      }}
+      onClick={() => navigate("/")}
+    ></ArrowBackIcon>
+  );
 }

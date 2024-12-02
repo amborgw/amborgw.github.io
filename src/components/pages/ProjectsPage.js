@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function ProjectsPage() {
   return (
     <Box id="projects">
-      <Construction/>
+      <Construction />
     </Box>
-  )
+  );
 }

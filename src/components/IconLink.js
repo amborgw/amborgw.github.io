@@ -5,5 +5,5 @@ export default function IconLink(props) {
     <a href={props.link} target="_blank" aria-label="amborgw github link">
       {props.children}
     </a>
-  )
+  );
 }
