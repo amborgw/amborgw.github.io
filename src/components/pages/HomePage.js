@@ -41,7 +41,10 @@ export default function HomePage() {
     <ThemeProvider theme={theme}>
       {/* {isMs && <TitlePage/> } */}
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}>
-        <StarRoundedIcon sx={{ position: 'relative', right: '0.5rem', fontSize: "3rem", color: '#303A6F' }}/>
+        <StarRoundedIcon sx={{ position: 'relative', right: '0.5rem', fontSize: "3rem", color: '#303A6F', animation: 'rotate 7s linear infinite', '@keyframes rotate': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        } }}/>
         <FeaturedItems/>
       </div>
       {/* <ProfilePage/>
