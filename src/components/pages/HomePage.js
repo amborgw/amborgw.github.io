@@ -1,11 +1,13 @@
-import react from "react";
+import React from "react";
 
-import Construction from "../Construction";
-import { Box, IconButton, ThemeProvider, Typography, createTheme, Grid, useMediaQuery } from "@mui/material";
+// import Construction from "../Construction";
+import {ThemeProvider, createTheme } from "@mui/material";
 import FeaturedItems from "../FeaturedItems";
-import TitlePage from "../TitlePage";
-import ProfilePage from "./ProfilePage";
-import ProjectsPage from "./ProjectsPage";
+// import TitlePage from "../TitlePage";
+// import ProfilePage from "./ProfilePage";
+// import ProjectsPage from "./ProjectsPage";
+import StarRoundedIcon from '@mui/icons-material/StarRounded';
+
 
 const theme = createTheme({
   typography: {
@@ -35,11 +37,13 @@ const theme = createTheme({
 
 
 export default function HomePage() {
-  const isMs = useMediaQuery('(min-width:1000px)');
   return (
     <ThemeProvider theme={theme}>
       {/* {isMs && <TitlePage/> } */}
-      <FeaturedItems/>
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}>
+        <StarRoundedIcon sx={{ position: 'relative', right: '0.5rem', fontSize: "3rem", color: '#303A6F' }}/>
+        <FeaturedItems/>
+      </div>
       {/* <ProfilePage/>
       <ProjectsPage/> */}
     </ThemeProvider>

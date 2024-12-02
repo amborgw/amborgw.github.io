@@ -1,20 +1,24 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
-import StarRoundedIcon from '@mui/icons-material/StarRounded';
 
 
 export default function FeaturedItems() {
+    const isMs = useMediaQuery('(min-width:1000px)');
+
     return (
-        <Stack id="home" spacing={4} justifyContent="center" alignItems="center" height="100vh" width="100vw">
-            <StarRoundedIcon sx={{ position: 'relative', right: '0.5rem', fontSize: "4rem", color: '#303A6F', minWidth: '3rem'}}/>
+        // <Stack id="home" spacing={4} justifyContent="center" alignItems="center">
+        <>
             <Box sx={{ 
                 background: 'rgba(255, 255, 255, 0.4)',
-                maxWidth: '50rem',
+                maxWidth: '60rem',
                 borderRadius: '1rem',
+                margin: '2rem',
                 padding: '2rem',
             }}>
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={4}>
-                    <img style={{ width: "auto", height: "30rem", objectFit: 'cover', borderRadius: '0.5em'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img>
+                    {(isMs) ? <img style={{ width: "auto", height: "30rem", objectFit: 'cover', borderRadius: '0.5em'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img> : 
+                    <img style={{ width: "100%", height: "auto", objectFit: 'cover', borderRadius: '0.5em'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img>}
+                    
                     <Stack>
                     <Typography variant="h1">
                         Hi, I'm Amber Wong
@@ -35,6 +39,7 @@ export default function FeaturedItems() {
                     </Stack>                    
                 </Stack>
             </Box>
-        </Stack>
+        </>
+        // </Stack>
     )
 }
