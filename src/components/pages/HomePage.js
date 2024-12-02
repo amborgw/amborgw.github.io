@@ -45,9 +45,7 @@ export default function HomePage() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          // width: "100vw",
-          // height: "100vh",
-          // gap: "2rem",
+          gap: "2rem",
         }}
       >
         {isMs ? (
@@ -56,7 +54,6 @@ export default function HomePage() {
           <StarRoundedIcon
             sx={{
               position: "relative",
-              right: "0.5rem",
               fontSize: "3rem",
               color: "#303A6F",
               animation: "rotate 7s linear infinite",
