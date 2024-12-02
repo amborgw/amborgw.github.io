@@ -1,9 +1,9 @@
-import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
-
+import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
+import profile from "../images/pfp.jpg";
 
 export default function FeaturedItems() {
-    const isMs = useMediaQuery('(min-width:1000px)');
+    const isMs = useMediaQuery('(min-width:900px)');
 
     return (
         // <Stack id="home" spacing={4} justifyContent="center" alignItems="center">
@@ -16,8 +16,8 @@ export default function FeaturedItems() {
                 padding: '2rem',
             }}>
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={4}>
-                    {(isMs) ? <img style={{ width: "auto", height: "30rem", objectFit: 'cover', borderRadius: '0.5em'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img> : 
-                    <img style={{ width: "100%", height: "auto", objectFit: 'cover', borderRadius: '0.5em'}} src="https://i.pinimg.com/564x/74/87/97/7487970175625953ffe6a471bc3485bd.jpg"></img>}
+                    {(isMs) ? <img style={{ width: "auto", height: "30rem", objectFit: 'cover', borderRadius: '0.5em'}} src={profile} alt="profile"></img> : 
+                    <img style={{ width: "100%", maxHeight: '20rem', height: "auto", objectFit: 'cover', borderRadius: '0.5em'}} src={profile} alt="profile"></img>}
                     
                     <Stack>
                     <Typography variant="h1">
